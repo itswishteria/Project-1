@@ -1,7 +1,9 @@
 <template>
-  <div class="text-2xl text-green-500">Hello world</div>
+  <MainNavbar />
 </template>
 
-<script setup></script>
+<script setup>
+import MainNavbar from './components/MainNavbar.vue'
+</script>
 
 <style scoped></style>

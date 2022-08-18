@@ -1,0 +1,241 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  /*background-color: #242424; */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+html,
+html * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Gotham, Helvetica Neue, Helvetica, Arial, ' sans-serif';
+}
+
+.header-container {
+  float: right;
+}
+
+body {
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#app {
+  width: 1600px;
+}
+
+/*Container that includes two columns*/
+.col-2 {
+  margin: 0;
+  align-content: center;
+  align-self: center;
+}
+/* Create two equal columns that floats next to each other */
+.Song {
+  float: left;
+  width: 30%;
+  padding-left: 40px;
+  margin-left: 60px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.intro p {
+  border-radius: 1.15rem;
+  line-height: 1.25;
+  max-width: 75%;
+  padding: 0.5rem 0.875rem;
+  position: relative;
+  word-wrap: break-word;
+}
+
+.intro p::before,
+.intro p::after {
+  bottom: -0.1rem;
+  content: '';
+  height: 1rem;
+  position: absolute;
+}
+
+.intro {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  margin-right: 10px;
+  height: auto; /* Should be removed. Only for demonstration */
+  border-radius: 35px;
+  margin-bottom: 130px;
+}
+
+p.intro-text::before {
+  border-bottom-left-radius: 0.8rem 0.7rem;
+  border-right: 1rem solid #248bf5;
+  right: -0.35rem;
+  transform: translate(0, -0.1rem);
+}
+
+p.intro-text::after {
+  background-color: black;
+  border-bottom-left-radius: 0.5rem;
+  right: -40px;
+  transform: translate(-30px, -2px);
+  width: 10px;
+}
+/* Clear floats after the columns */
+.col-2:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.themaking-container {
+  width: 100%;
+  height: 500px;
+  background-image: url('images/a.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  display: flex;
+  margin: -1% auto 20px auto;
+  margin-top: 6rem;
+  position: relative;
+  align-items: center;
+}
+
+.themaking-text {
+  font-family: arial black;
+  font-size: 70px;
+  align-items: left;
+  margin-left: 7rem;
+  color: white;
+  text-decoration: none;
+}
+
+.thetypes-container {
+  width: 100%;
+  height: 500px;
+  background-image: url('images/b.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  display: flex;
+  margin: -1% auto 20px auto;
+  position: relative;
+  align-items: center;
+}
+
+.thetypes-text {
+  font-family: arial black;
+  font-size: 70px;
+  align-items: center;
+  margin-left: 60rem;
+  padding: 50px;
+  color: white;
+  text-decoration: none;
+}
+
+.storytime-container {
+  width: 100%;
+  height: 500px;
+  background-image: url('images/song.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  display: flex;
+  margin: -1% auto 20px auto;
+  position: relative;
+  align-items: center;
+}
+
+.storytime-text {
+  font-family: arial black;
+  font-size: 70px;
+  align-items: left;
+  margin-left: 7rem;
+  color: white;
+  text-decoration: none;
+}
+
+.contact-container {
+  width: 100%;
+  height: 500px;
+  background-image: url('images/d.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  display: flex;
+  margin: -1% auto 20px auto;
+  position: relative;
+  align-items: center;
+}
+
+.contact-text {
+  font-family: arial black;
+  font-size: 80px;
+  align-items: center;
+  margin-left: 50rem;
+  color: white;
+  text-decoration: none;
+}
+
+/*Tablet View*/
+@media (min-width: 768px) {
+  .style-nav ul li {
+    display: inline-block;
+  }
+
+  .style-nav ul {
+    text-align: center;
+  }
+  .col-md-one-half {
+    width: 50%;
+  }
+
+  .col {
+    float: left;
+    padding: 0px 7px 14px;
+  }
+}
+
+/*Desktop View*/
+@media (min-width: 1024px) {
+  #app {
+    width: 1024px;
+  }
+
+  .style-logo {
+    float: left;
+  }
+
+  .style-nav {
+    float: right;
+  }
+
+  .col-lg-one-fourth {
+    width: 25%;
+  }
+}
+
+.div-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
