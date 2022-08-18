@@ -23,6 +23,9 @@ For example, the Home component is imported via the ./views/MainHome.vue,
 so that file is the component to be utilized
 
 props allow passing of data between the two routes
+
+reference =
+https://router.vuejs.org/guide/#html
 */
 export default createRouter({
   history: createWebHistory(),
