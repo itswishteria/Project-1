@@ -15,43 +15,25 @@
   -webkit-text-size-adjust: 100%;
 }
 
+/* for debugging purposes */
+/*
+* {
+  box-sizing: border-box;
+  outline: 1px solid cyan;
+}
+*/
+
 html,
 html * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
   font-family: Gotham, Helvetica Neue, Helvetica, Arial, ' sans-serif';
-}
-
-.header-container {
-  float: right;
 }
 
 body {
   background: #ffffff;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-}
-
-#app {
-  width: 1600px;
-}
-
-/*Container that includes two columns*/
-.col-2 {
-  margin: 0;
-  align-content: center;
-  align-self: center;
-}
-/* Create two equal columns that floats next to each other */
-.Song {
-  float: left;
-  width: 30%;
-  padding-left: 40px;
-  margin-left: 60px;
-  height: 300px; /* Should be removed. Only for demonstration */
 }
 
 .intro p {
@@ -76,7 +58,6 @@ body {
   width: 30%;
   padding: 10px;
   margin-right: 10px;
-  height: auto; /* Should be removed. Only for demonstration */
   border-radius: 35px;
   margin-bottom: 130px;
 }

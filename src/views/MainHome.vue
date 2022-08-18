@@ -1,33 +1,27 @@
 <template>
   <div>
-    <div class="col-2 div-center">
-      <div class="Song" style="background-color: #aaa">
-        <img src="images/song.jpg" width="270px" />
+    <div class="div-center song-container">
+      <div class="song-character">
+        <img src="gifs/song-the-gif.gif" width="570px" height="570px" />
       </div>
-      <div class="intro" style="background-color: #bbb">
-        <p class="intro-text">
-          Hello everyone, my name is Song! And here you get to find out more of
-          songket, the making of it, types of it and more! I hope you have fun
-          learning here!
-        </p>
+      <div class="song-dialogue-container">
+        <div class="song-dialogue-wrapper">
+          <p class="song-dialogue-text">
+            Hello everyone, my name is Song! And here you get to find out more
+            of songket, the making of it, types of it and more! I hope you have
+            fun learning here!
+          </p>
+        </div>
       </div>
     </div>
 
-    <div class="themaking-container">
-      <a href="themaking.html" class="themaking-text"><p>The Making</p></a>
-    </div>
+    <div class="themaking-container"></div>
 
-    <div class="thetypes-container">
-      <a href="thetypes.html" class="thetypes-text"><p>The Types</p></a>
-    </div>
+    <div class="thetypes-container"></div>
 
-    <div class="storytime-container">
-      <a href="storytime.html" class="storytime-text"><p>Story Time</p></a>
-    </div>
+    <div class="storytime-container"></div>
 
-    <div class="contact-container">
-      <a href="contact.html" class="contact-text"><p>Contact</p></a>
-    </div>
+    <div class="contact-container"></div>
   </div>
 </template>
 
@@ -35,4 +29,42 @@
 export default {}
 </script>
 
-<style></style>
+<style scoped>
+.song-container {
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.song-container > div {
+  padding: 3rem;
+}
+
+.song-dialogue-container {
+  margin: 40px;
+  display: inline-block;
+  position: relative;
+  height: auto;
+  background-color: lightyellow;
+  background-color: grey;
+  align-content: center;
+  border-radius: 35px;
+  padding: 1rem !important;
+}
+
+.song-dialogue-wrapper:before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: auto;
+  left: -35px;
+  top: 30px;
+  bottom: auto;
+  border: 18px solid;
+  border-color: transparent grey grey transparent;
+}
+
+.song-dialogue-text {
+  padding: 0.5rem 2rem;
+}
+</style>

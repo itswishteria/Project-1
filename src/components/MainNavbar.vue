@@ -1,10 +1,10 @@
 <template>
-  <div class="row">
+  <div class="row navbar-container max-w-screen-xl">
     <div class="col">
       <img class="style-logo" src="images/logo.png" alt="Songket logo" />
-      <nav class="style-nav">
+      <nav class="style-nav navbar-menu">
         <ul>
-          <li><router-link to="/">Home</router-link></li>
+          <li><router-link to="/" @click="scrollTop">Home</router-link></li>
           <li><router-link to="/TheMaking">The Making</router-link></li>
           <li>The Types</li>
           <li>Story Time</li>
@@ -16,13 +16,39 @@
 </template>
 
 <script>
-export default {}
+import { onMounted } from 'vue'
+
+export default {
+  setup() {
+    // scroll to the top of the page when user is directed to another route
+    const scrollTop = () => {
+      window.scrollTo(0, 0)
+    }
+
+    // animeJS will not work during setup, only on mount
+    onMounted(() => {})
+
+    return {
+      scrollTop,
+    }
+  },
+}
 </script>
 
 <style scoped>
+.navbar-container {
+  max-width: 1600px;
+  overflow: auto;
+  display: flex;
+  margin: 0 auto;
+}
+
+.navbar-menu {
+}
+
 .col {
   display: block;
-  flex-direction: flex-row;
+  flex-direction: row;
   width: 100%;
 }
 

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="main-container div-center">
     <MainNavbar />
     <router-view v-slot="{ Component }">
       <component :is="Component" />
@@ -11,4 +11,10 @@
 import MainNavbar from './components/MainNavbar.vue'
 </script>
 
-<style scoped></style>
+<style scoped>
+.main-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1600px;
+}
+</style>
